@@ -1,14 +1,12 @@
-fn main() {
-    let cats: u8 = 100;
+fn main() -> () {
+    let list = [1450, 9527, 5566];
 
-    if cats > 1 {
-        println!("好多貓");
-    } else {
-        println!("一隻貓");
+    for item in list.iter() {
+        println!("{}", item);
     }
-}
 
-fn variable_declare_convention() {
-    let hasCat = true;
-    const age: u8 = 20;
+    println!("{:?}", list);
+
+    let pet = ('🐈', false, 18);
+    println!("{} {} {}", pet.0, pet.1, pet.2)
 }
