@@ -1,0 +1,4 @@
+workspace = { members = ["hey-rust"] }
+[package]
+name = "hello_rust"
+version = "0.0.1"
