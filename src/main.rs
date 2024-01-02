@@ -1,12 +1,14 @@
 fn main() -> () {
-    let list = [1450, 9527, 5566];
+    let mut age: u8 = 20;
 
-    for item in list.iter() {
-        println!("{}", item);
+    println!("{}", age); // 印出 20
+
+    if true {
+        let a = 20;
     }
 
-    println!("{:?}", list);
+    // println!("{}", a); // cannot find value `a` in this scope
 
-    let pet = ('🐈', false, 18);
-    println!("{} {} {}", pet.0, pet.1, pet.2)
+    const my_age: u8 = 10;
+    println!("{}", my_age);
 }
