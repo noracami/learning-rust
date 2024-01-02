@@ -1,14 +1,13 @@
 fn main() -> () {
-    let mut age: u8 = 20;
+    let age = 20;
 
-    println!("{}", age); // 印出 20
+    let message = if age < 8 {
+        "小朋友"
+    } else if age >= 8 && age < 18 {
+        "年輕人"
+    } else {
+        "成年人"
+    };
 
-    if true {
-        let a = 20;
-    }
-
-    // println!("{}", a); // cannot find value `a` in this scope
-
-    const my_age: u8 = 10;
-    println!("{}", my_age);
+    println!("{}", message);
 }
